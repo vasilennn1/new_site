@@ -1,0 +1,396 @@
+@media (min-width: 1024px) {
+    
+
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Forum";
+    font-weight: lighter;
+    background-size: 100%;
+    background-color: #3B181E;
+    color: white;
+    
+}
+
+main {
+    width: auto;
+    height: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 75px;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: linear-gradient(transparent 88%, #3B181E ), url('img/background/thomas-ae-295NLwGdrKM-unsplash.jpg') no-repeat;
+    background-size: cover;
+}
+
+main::after {
+*background-color: black;
+z-index: 5;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 76px;
+    margin-bottom: 5%;
+}
+
+.logo {
+    align-self: center;
+    width: 9vw;
+}
+
+.burger-menu {
+    width: 7vw;
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    height: 40vh;
+    margin-bottom: 60px;
+}
+
+.title p{
+    display: block;
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.button-main  {
+    /* width: 100%; */
+    height: auto;
+    
+    width: 10vw;
+    /* height: 50px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 41px;
+
+  }
+
+.button-main button {
+    width: 199px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+.main-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+.contact-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr repeat();
+    gap: 24px;
+}
+
+.mouse {
+    margin-top: auto;
+}
+
+.down-arrow {
+    margin-top: -50px;
+}
+
+.gradient {
+ width: 100%;
+ border: 1px solid black;
+}
+
+
+.catalog {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+
+}
+
+.catalog-bg {
+    display: block;
+    position: relative;
+    top: 235px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    font-size: 190px;
+    color: white;
+    opacity: 0.02;
+    text-transform: uppercase;
+    z-index: -1;
+    letter-spacing: 5px;
+}
+
+.bg-text {
+    display: block;
+    margin-top:0;
+    margin-bottom: 0;
+    width: auto;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.underline-catalog {
+    width: 85.5px;
+    height: 1px;
+    border-bottom: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.card-list {
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3vw; */
+    display: flex;
+    margin-bottom: 0.02vw;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 215px;
+
+}
+
+
+.card {
+    width: 17.19vw;
+    height: 23.44vw;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.73vw;
+    border: 1px solid white;
+    position: relative;
+}
+
+
+.card-title, .view-works {
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.card-1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("img/cards/card-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: 2;
+} 
+
+
+
+
+
+
+.card-2 {
+    background: url("img/cards/card-2.svg") no-repeat;
+    background-size: cover;
+    z-index: 1;    
+}
+
+.card-3 {
+    background: url("img/cards/card-3.svg") no-repeat;
+    background-size: cover;
+    z-index: 1;    
+}
+
+.card-4 {
+    background: url("img/cards/card-4.svg") no-repeat;
+    background-size: cover;
+    z-index: 1;    
+}
+
+
+
+
+.number-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 15px;
+}
+.current-card img {
+opacity: 0.3;
+}
+
+
+.number-line {
+    display: inline;
+    width: 70px;
+    height: 1px;
+    border-bottom: 1px solid white;
+    order: 1;
+}
+
+.current-card .number-line {
+    order: 0;
+}
+
+.number {
+    display: inline;
+    width: 30px;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.card-title {
+    margin-top: auto;
+    margin-left: 15px;
+}
+
+
+.view-works {
+    display: block;
+    width: 10.36vw;
+    height: 2.60vw;
+    background-color: white;
+    border: none;
+    margin-bottom: 15px; 
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-family: "Forum";
+    font-size: 0.8vw;
+}
+
+
+.promotions {
+    margin-top: 150px;
+    width: 1213px;
+    height: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 697px;
+    margin-bottom: 150px;
+}
+
+.promo-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    display: block;
+    width: 220px;
+    height: 85px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.promo-text {
+    width: 352px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 35px;
+
+}
+
+
+.promo-underline {
+    display: block;
+    width: 85.5px;
+    height: 1px;
+    border-bottom: 1px solid white;
+}
+
+.get-order {
+    width: 220px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Forum";
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+
+
+.footer {
+    width: 95%;
+    height: 140px;
+    border-top: 1px solid rgb(97, 73, 73);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-catalog-list {
+    display: flex;
+    justify-content: center;
+    opacity: 0.6;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-catalog-list li {
+    margin-right: 80px;
+}
+
+.footer-catalog-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contacts-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.footer-contacts-list li {
+    margin-right: 40px;
+}
+
+}
